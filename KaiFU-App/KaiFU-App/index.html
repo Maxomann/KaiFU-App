@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaifu Gymnasium</title>
+
+    <!-- CordovaTest references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/pagescript.js"></script>
+
+</head>
+<body>
+
+    <div id="index">
+        <header>
+            <img id="kfu_logo" src="images/kaifu-logo.png" />
+            <p id="header_gym">Gymnasium</p><p> Kaiser-Friedrich-Ufer</p>
+        </header>
+
+        <div id="main_nav">
+            <div class="main_square" onclick="showTimetable()"><img src="images/calendar.svg" /><p>Vertretung</p></div>
+            <div class="main_square" onclick="showCanteen()"><img src="images/canteen.svg" /><p>Kantine</p></div>
+            <div class="main_square" onclick="showNews()"><img src="images/news.svg" /><p>News</p></div>
+            <div class="main_square" onclick="showContacts()"><img src="images/contact.svg" /><p>Kontakte</p></div>
+            <div class="main_long" onclick="showFeedback()"><img src="images/feedback.svg" /><p>Feedback</p></div>
+        </div>
+    </div>
+
+    <div id="timetable">
+        <h1>Timetable</h1>
+    </div>
+
+    <div id="canteen">
+        <h1>Canteen</h1>
+    </div>
+
+    <div id="news">
+        <h1>News</h1>
+    </div>
+
+    <div id="contacts">
+        <h1>Contacts</h1>
+    </div>
+
+    <div id="feedback">
+        <h1>Feedback</h1>
+    </div>
+
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

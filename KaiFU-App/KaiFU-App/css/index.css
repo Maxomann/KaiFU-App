@@ -1,0 +1,104 @@
+﻿body {
+    background-image: url(../images/background.jpg);
+    background-position-x: center;
+    background-position-y: top;
+    color: #333;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+    a p, a p:hover {
+        text-decoration: none;
+        color: #333;
+    }
+
+/*HEADER*/
+
+header {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+}
+
+    header p {
+        font-size: 1.2em;
+        display: inline;
+    }
+
+#kfu_logo {
+    width: 85%;
+}
+
+#header_gym {
+    color: #00aeef;
+}
+
+/*NAV*/
+#main_nav {
+    position: absolute;
+    width: 300px;
+    height: 375px;
+    top: 60%;
+    left: 50%;
+    /*background-color: red;*/
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.main_square {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    /*background-color: green;*/
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.main_long {
+    width: 280px;
+    height: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*background-color: green;*/
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.main_square, .main_long {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.main_square img {
+    height: 100px;
+    margin-left: 50%;
+    margin-top: 4px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#main_nav .main_long img {
+    height: 50px;
+}
