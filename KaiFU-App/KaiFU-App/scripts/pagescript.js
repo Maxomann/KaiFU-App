@@ -93,8 +93,8 @@ function sendFeedbackMail() {
         cordova.plugins.email.open({
             to: 'test@testmail.com', // email addresses for TO field
             subject: 'feedback: ' + mood, // subject of the email
-            body: 'mail: ' + document.getElementById('feedback_email') + '\n' +
-                    'feedback ' + document.getElementById('feedback_text'), // email body (for HTML, set isHtml to true)
+            body: /*'mail: ' + document.getElementById('feedback_email').value + '\n' +*/
+                    'feedback: ' + document.getElementById('feedback_text').value, // email body (for HTML, set isHtml to true)
             isHtml: false // indicats if the body is HTML or plain text
         }, showMain);
     }
