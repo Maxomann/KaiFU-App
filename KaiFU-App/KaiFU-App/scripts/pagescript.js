@@ -46,3 +46,58 @@ function onBackButtonPressed() {
 $(document).ready(function () {
     showMain();
 });
+
+
+/******FEEDBACK******/
+var mood = "";
+
+function selectSmile() {
+    var images = document.getElementById("feedback_smiles").getElementsByTagName("img");
+    images[0].src = "images/smile_selected.svg";
+    images[1].src = "images/neutral.svg";
+    images[2].src = "images/sad.svg";
+
+    mood = "smile";
+}
+function selectNeutral() {
+    var images = document.getElementById("feedback_smiles").getElementsByTagName("img");
+    images[0].src = "images/smile.svg";
+    images[1].src = "images/neutral_selected.svg";
+    images[2].src = "images/sad.svg";
+
+    mood = "neutral";
+}
+function selectSad() {
+    var images = document.getElementById("feedback_smiles").getElementsByTagName("img");
+    images[0].src = "images/smile.svg";
+    images[1].src = "images/neutral.svg";
+    images[2].src = "images/sad_selected.svg";
+
+    mood = "sad";
+}
+
+function sendFeedbackMail() {
+    if (mood == "") {
+        console.error("Feedback mood is 0");
+        return false;
+    }
+    else {
+        cordova.plugins.email.isAvailable(
+    function (isAvailable) {
+        // alert('Service is not available') unless isAvailable;
+        if (isAvailable == false) {
+            console.error("device cannot send mail");
+        }
+    });
+
+        cordova.plugins.email.open({
+            to: 'test@testmail.com', // email addresses for TO field
+            subject: 'feedback: ' + mood, // subject of the email
+            body: 'mail: ' + document.getElementById('feedback_email') + '\n' +
+                    'feedback ' + document.getElementById('feedback_text'), // email body (for HTML, set isHtml to true)
+            isHtml: false // indicats if the body is HTML or plain text
+        }, showMain);
+    }
+
+    return true;
+}

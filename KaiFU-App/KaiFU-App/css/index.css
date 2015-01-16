@@ -15,7 +15,7 @@ a, a:hover {
         color: #333;
     }
 
-/*HEADER*/
+/******INDEX******/
 
 header {
     position: absolute;
@@ -47,6 +47,7 @@ header {
 }
 
 /*NAV*/
+
 #main_nav {
     position: absolute;
     width: 300px;
@@ -101,4 +102,23 @@ header {
 
 #main_nav .main_long img {
     height: 50px;
+}
+
+/******FEEDBACK******/
+#feedback{
+    text-align:center;
+}
+
+#feedback h1{
+    background-color:rgba(255, 255, 255, 0.85);
+    border-radius:5px;
+}
+
+#feedback_smiles{
+    text-align:center;
+    width:100%;
+}
+
+#feedback_smiles img{
+    width:100px;
 }

@@ -120,10 +120,13 @@
     <Content Include="images\calendar_old.svg" />
     <Content Include="images\canteen.svg" />
     <Content Include="images\contact.svg" />
+    <Content Include="images\neutral.svg" />
     <Content Include="images\feedback.svg" />
     <Content Include="images\kaifu-logo.png" />
     <Content Include="images\news.svg" />
     <Content Include="images\news_old.svg" />
+    <Content Include="images\sad.svg" />
+    <Content Include="images\smile.svg" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Folder Include="merges\ios\" />
@@ -144,6 +147,18 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.html" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\.fetch.json" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\CHANGELOG.md" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\LICENSE" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\plugin.xml" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\README.md" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\src\android\EmailComposer.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\src\ios\APPEmailComposer.h" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\src\ios\APPEmailComposer.m" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\src\windows\EmailComposerProxy.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\src\wp8\EmailComposer.cs" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\src\wp8\Options.cs" />
+    <Content Include="plugins\de.appplant.cordova.plugin.email-composer\www\email_composer.js" />
     <Content Include="plugins\org.apache.cordova.inappbrowser\.fetch.json" />
     <Content Include="plugins\org.apache.cordova.inappbrowser\CONTRIBUTING.md" />
     <Content Include="plugins\org.apache.cordova.inappbrowser\doc\de\index.md" />

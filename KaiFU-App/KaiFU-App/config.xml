@@ -9,5 +9,6 @@
   <preference name="windows-target-version" value="8.0" />
   <preference name="windows-phone-target-version" value="8.1" />
   <vs:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+  <vs:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2dev" />
   <vs:platformSpecificValues />
 </widget>
