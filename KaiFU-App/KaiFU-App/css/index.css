@@ -30,7 +30,7 @@ header {
     transform: translateX(-50%);
     text-align: center;
     font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
 }
 
@@ -87,7 +87,7 @@ header {
 }
 
 .main_square, .main_long {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .main_square img {
@@ -111,7 +111,7 @@ header {
 }
 
 #feedback h1{
-    background-color:rgba(255, 255, 255, 0.85);
+    background-color:rgba(255, 255, 255, 0.95);
     border-radius:5px;
 }
 

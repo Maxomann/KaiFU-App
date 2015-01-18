@@ -115,11 +115,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="images\background_old.jpg" />
     <Content Include="images\background.jpg" />
     <Content Include="images\calendar.svg" />
     <Content Include="images\calendar_old.svg" />
     <Content Include="images\canteen.svg" />
     <Content Include="images\contact.svg" />
+    <Content Include="images\info.svg" />
     <Content Include="images\neutral.svg" />
     <Content Include="images\feedback.svg" />
     <Content Include="images\kaifu-logo.png" />
@@ -129,6 +131,7 @@
     <Content Include="images\smile.svg" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Content Include="SIL Open Font License.txt" />
     <Folder Include="merges\ios\" />
     <Content Include="merges\windows\scripts\platformOverrides.js" />
     <Content Include="merges\windows\scripts\winstore-jscompat.js" />
