@@ -25,51 +25,126 @@
 </head>
 <body>
 
-    <div id="index">
-        <header>
-            <img id="kfu_logo" src="images/kaifu-logo.png" />
-            <p id="header_gym">Gymnasium</p><p> Kaiser-Friedrich-Ufer</p>
-        </header>
+    <div class="page" id="index">
+        <div>
+            <header>
+                <img id="kfu_logo" src="images/kaifu-logo.png" />
+                <p id="header_gym">Gymnasium</p><p> Kaiser-Friedrich-Ufer</p>
+            </header>
 
-        <div id="main_nav">
-            <div class="main_square" onclick="showTimetable()"><img src="images/calendar.svg" /><p>Vertretung</p></div>
-            <div class="main_square" onclick="showCanteen()"><img src="images/canteen.svg" /><p>Kantine</p></div>
-            <div class="main_square" onclick="showNews()"><img src="images/news.svg" /><p>News</p></div>
-            <div class="main_square" onclick="showContacts()"><img src="images/contact.svg" /><p>Kontakte</p></div>
-            <div class="main_long" onclick="showFeedback()"><img src="images/feedback.svg" /><p>Feedback</p></div>
+            <div id="main_nav">
+                <div class="main_square" onclick="showTimetable()"><img src="images/calendar.svg" /><p>Vertretung</p></div>
+                <div class="main_square" onclick="showCanteen()"><img src="images/canteen.svg" /><p>Kantine</p></div>
+                <div class="main_square" onclick="showNews()"><img src="images/news.svg" /><p>News</p></div>
+                <div class="main_square" onclick="showContacts()"><img src="images/contact.svg" /><p>Kontakte</p></div>
+                <div class="main_long" onclick="showFeedback()"><img src="images/feedback.svg" /><p>Feedback</p></div>
+            </div>
         </div>
     </div>
 
-    <div id="timetable">
-        <h1>Timetable</h1>
+    <div class="page simple" id="timetable">
+        <div>
+            <h1>Timetable</h1>
+        </div>
     </div>
 
-    <div id="canteen">
-        <h1>Canteen</h1>
+    <div class="page simple" id="canteen">
+        <div>
+            <h1>Canteen</h1>
+        </div>
     </div>
 
-    <div id="news">
-        <h1>News</h1>
+    <div class="page simple" id="news">
+        <div>
+            <h1>News</h1>
+        </div>
     </div>
 
-    <div id="contacts">
-        <h1>Contacts</h1>
-    </div>
+    <div class="page simple" id="contacts">
+        <div>
+            <h1>Kontakte</h1>
 
-    <div id="feedback">
-        <h1>Feedback</h1>
+            <p>
+                Gymnasium Kaiser-Friedrich-Ufer Hamburg <br />
+                Kaiser-Friedrich-Ufer 6<br />
+                20259 Hamburg <br />
+            </p>
 
-        <div id="feedback_smiles">
-            <img onclick="selectSmile()" src="images/smile.svg" />
-            <img onclick="selectNeutral()" src="images/neutral.svg" />
-            <img onclick="selectSad()" src="images/sad.svg" />
+            <p>
+                <b>Schulbüro</b>, Frau Hermenau <br />
+                <a href="tel:040428012333">040 42801-2333</a> <br />
+                <a href="mailto:sekretariat@gymnasium-kaifu.de">sekretariat@gymnasium-kaifu.de</a> <br />
+                Schulbüro, Frau Fannipour / Herr Riebe <br />
+                <a href="tel:040428012513">040 42801-2513</a> <br />
+            </p>
+
+            <p>
+                <b>Schulbüro Oberstufenhaus</b>, Frau Nickel <br />
+                <a href="tel:040428012331">040 42801-2331</a> <br />
+                <a href="mailto:oshbuero@hlg-hamburg.de">oshbuero@hlg-hamburg.de</a> <br />
+            </p>
+
+            <div class="con_row">
+                <img class="img-circle"
+                     src="images/people/2013-SL-Kulze-Meyer-140.jpg" />
+                <p>
+                    Herr Kulze-Meyer, stellv. Schulleitung<br />
+                    <a href="tel:040428012306">040 42801-2306</a><br />
+                    <a href="mailto:stellvertreter@gymnasium-kaifu.de">stellvertreter@gymnasium-kaifu.de</a><br />
+                </p>
+            </div>
+            <div class="con_row">
+                <img class="img-circle"
+                     src="images/people/2014-SL-Most-140.jpg" />
+                <p>
+                    Herr Most, Leitung Beobachtungsstufe<br />
+                    <a href="tel:040428012337">040 42801-2337</a> <br />
+                    <a href="mailto:beobachtungsstufe@gymnasium-kaifu.de">beobachtungsstufe@gymnasium-kaifu.de</a><br />
+                </p>
+            </div>
+            <div class="con_row">
+                <img class="img-circle"
+                     src="images/people/2013-SL-Haase-140.jpg" />
+                <p>
+                    Herr Haase, Leitung Mittelstufe<br />
+                    <a href="tel:040428012335">040 42801-2335</a><br />
+                    <a href="mailto:mittelstufe@gymnasium-kaifu.de">mittelstufe@gymnasium-kaifu.de</a><br />
+                </p>
+            </div>
+            <div class="con_row">
+                <img class="img-circle"
+                     src="images/people/2013-SL-Papies-140.jpg" />
+                <p>
+                    Frau Papies, Leitung Oberstufe<br />
+                    <a href="tel:040428012314">040 42801-2314</a><br />
+                    <a href="mailto:oberstufe@gymnasium-kaifu.de">oberstufe@gymnasium-kaifu.de</a><br />
+                </p>
+            </div>
+            <div class="con_row">
+                <img class="img-circle"
+                     src="images/people/2013-SL-Busch-140.jpg" />
+                <p>
+                    Frau Busch, didaktische Leitung<br />
+                    <a href="tel:040428012335">040 42801-2335</a><br />
+                    <a href="mailto:schulentwicklung@gymnasium-kaifu.de">schulentwicklung@gymnasium-kaifu.de</a><br />
+                </p>
+            </div>
+
         </div>
 
-        <!--<input id="feedback_email" type="email" class="form-control" placeholder="Deine E-Mail Adresse (optional)">-->
+        <div class="page simple" id="feedback">
+            <h1>Feedback</h1>
 
-        <textarea id="feedback_text" class="form-control" rows="10" placeholder="Was können wir verbessern? (optional)"></textarea>
+            <div id="feedback_smiles">
+                <img onclick="selectSmile()" src="images/smile.svg" />
+                <img onclick="selectNeutral()" src="images/neutral.svg" />
+                <img onclick="selectSad()" src="images/sad.svg" />
+            </div>
 
-        <button onclick="sendFeedbackMail()" id="feedback_button" class="btn btn-default">Senden</button>
+            <textarea id="feedback_text" class="form-control" rows="10" placeholder="Was können wir verbessern? (optional)"></textarea>
+
+            <button onclick="sendFeedbackMail()" id="feedback_button" class="btn btn-default">Senden</button>
+        </div>
     </div>
 
 </body>

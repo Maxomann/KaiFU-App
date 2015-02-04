@@ -29,7 +29,8 @@ function showNews() {
 }
 
 function showContacts() {
-    window.open("http://www.kaifu-gymnasium.de/index.php/kontakt", "_blank");
+    disableAllPages();
+    getPage("contacts").style.display = "block";
 }
 
 function showFeedback() {

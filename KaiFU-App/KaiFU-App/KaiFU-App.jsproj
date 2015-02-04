@@ -127,6 +127,11 @@
     <Content Include="images\kaifu-logo.png" />
     <Content Include="images\news.svg" />
     <Content Include="images\news_old.svg" />
+    <Content Include="images\people\2013-SL-Busch-140.jpg" />
+    <Content Include="images\people\2013-SL-Haase-140.jpg" />
+    <Content Include="images\people\2013-SL-Kulze-Meyer-140.jpg" />
+    <Content Include="images\people\2013-SL-Papies-140.jpg" />
+    <Content Include="images\people\2014-SL-Most-140.jpg" />
     <Content Include="images\sad.svg" />
     <Content Include="images\smile.svg" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
