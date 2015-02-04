@@ -4,12 +4,14 @@
   <description>Die Kaifu-App ist hier! Unter anderem kannst du deinen Stundenplan checken und essen bestellen.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Kay Gonschior</author>
   <content src="index.html" />
-  <access origin="*" />
   <access origin="tel:*" />
   <access origin="geo:*" />
   <access origin="mailto:*" />
   <access origin="sms:*" />
   <access origin="market:*" />
+  <access origin="*" />
+  <access origin="http://*" />
+  <access origin="https://*" />
   <preference name="SplashScreen" value="screen" />
   <preference name="windows-target-version" value="8.0" />
   <preference name="windows-phone-target-version" value="8.1" />

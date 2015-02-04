@@ -24,6 +24,7 @@
 
 </head>
 <body>
+    <div id="testdiv"></div>
 
     <div class="page" id="index">
         <div>
@@ -57,6 +58,7 @@
     <div class="page simple" id="news">
         <div>
             <h1>News</h1>
+            <div id="newsfeed"></div>
         </div>
     </div>
 
@@ -120,7 +122,7 @@
                     <a href="mailto:oberstufe@gymnasium-kaifu.de">oberstufe@gymnasium-kaifu.de</a><br />
                 </p>
             </div>
-            <div class="con_row">
+            <div class="con_row"> 
                 <img class="img-circle"
                      src="images/people/2013-SL-Busch-140.jpg" />
                 <p>
@@ -131,20 +133,20 @@
             </div>
 
         </div>
+    </div>
 
-        <div class="page simple" id="feedback">
-            <h1>Feedback</h1>
+    <div class="page simple" id="feedback">
+        <h1>Feedback</h1>
 
-            <div id="feedback_smiles">
-                <img onclick="selectSmile()" src="images/smile.svg" />
-                <img onclick="selectNeutral()" src="images/neutral.svg" />
-                <img onclick="selectSad()" src="images/sad.svg" />
-            </div>
-
-            <textarea id="feedback_text" class="form-control" rows="10" placeholder="Was können wir verbessern? (optional)"></textarea>
-
-            <button onclick="sendFeedbackMail()" id="feedback_button" class="btn btn-default">Senden</button>
+        <div id="feedback_smiles">
+            <img onclick="selectSmile()" src="images/smile.svg" />
+            <img onclick="selectNeutral()" src="images/neutral.svg" />
+            <img onclick="selectSad()" src="images/sad.svg" />
         </div>
+
+        <textarea id="feedback_text" class="form-control" rows="10" placeholder="Was können wir verbessern? (optional)"></textarea>
+
+        <button onclick="sendFeedbackMail()" id="feedback_button" class="btn btn-default">Senden</button>
     </div>
 
 </body>

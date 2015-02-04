@@ -25,7 +25,8 @@ function showCanteen() {
 }
 
 function showNews() {
-    window.open("http://www.kaifu-gymnasium.de/", "_blank");
+    disableAllPages();
+    getPage("news").style.display = "block";
 }
 
 function showContacts() {
@@ -46,7 +47,40 @@ function onBackButtonPressed() {
 
 $(document).ready(function () {
     showMain();
+    updateRssFeed();
 });
+
+/******NEWS******/
+
+function updateRssFeed() {
+
+    var feedUrl = "http://kaifu-gymnasium.de/index.php?format=feed&type=rss";
+
+    var newsfeed = document.getElementById('newsfeed');
+
+    console.log("updateRssFeed started");
+
+    $.ajax({
+        url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(feedUrl),
+        dataType: 'json',
+        success: function (data) {
+            if (data.responseData.feed && data.responseData.feed.entries) {
+                $.each(data.responseData.feed.entries, function (i, e) {
+                    console.log("------------------------");
+                    console.log("title      : " + e.title);
+                    console.log("author     : " + e.author);
+                    console.log("description: " + e.description);
+                    
+                    
+                    newsfeed.innerHTML += "<h3 class='newsheader'>"+e.title+"</h1>";
+                    newsfeed.innerHTML += "<p>"+e.content+"</p>";
+                });
+            }
+        }
+    });
+
+    console.log("updateRssFeed complete");
+}
 
 
 /******FEEDBACK******/

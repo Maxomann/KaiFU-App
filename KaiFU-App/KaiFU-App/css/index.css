@@ -65,7 +65,7 @@ header {
     color: #00aeef;
 }
 
-/*NAV*/
+/******NAVIGATION******/
 
 #main_nav {
     width: 300px;
@@ -112,6 +112,12 @@ header {
 
 #main_nav .main_long img {
     height: 50px;
+}
+
+/******NEWS******/
+.newsheader{
+    font-size:1.2em;
+    color:#00aeef;
 }
 
 /******CONTACTS******/
