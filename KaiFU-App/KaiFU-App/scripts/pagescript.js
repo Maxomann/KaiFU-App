@@ -51,6 +51,9 @@ $(document).ready(function () {
 });
 
 /******NEWS******/
+function openNewsWindow( path/*string*/){
+    window.open(path, "_blank");
+}
 
 function updateRssFeed() {
 
@@ -72,7 +75,7 @@ function updateRssFeed() {
                     console.log("description: " + e.description);
                     
                     
-                    newsfeed.innerHTML += "<h3 class='newsheader'>"+e.title+"</h1>";
+                    newsfeed.innerHTML += '<h3 class=\"newsheader\" onclick=\"openNewsWindow(\''+e.link+'\')\">' + e.title + '</h1>';
                     newsfeed.innerHTML += "<p>"+e.content+"</p>";
                 });
             }

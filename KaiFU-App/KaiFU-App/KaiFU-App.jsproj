@@ -122,6 +122,7 @@
     <Content Include="images\canteen.svg" />
     <Content Include="images\contact.svg" />
     <Content Include="images\info.svg" />
+    <Content Include="images\KaiFUsw-generic.svg" />
     <Content Include="images\neutral.svg" />
     <Content Include="images\feedback.svg" />
     <Content Include="images\kaifu-logo.png" />

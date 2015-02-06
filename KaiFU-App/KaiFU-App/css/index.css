@@ -7,17 +7,6 @@
     min-width: 100%;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: #333;
-}
-
-    a p, a p:hover {
-        text-decoration: none;
-        color: #333;
-    }
-
-
 .page {
     position: absolute;
     /*background-color: red;*/
@@ -47,10 +36,19 @@ a, a:hover {
 
 header {
     width: 300px;
+    height: 160px;
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
 }
+
+    header img {
+        -moz-transform: translateY(-85px);
+        -ms-transform: translateY(-85px);
+        -o-transform: translateY(-85px);
+        -webkit-transform: translateY(-85px);
+        transform: translateY(-85px);
+    }
 
     header p {
         font-size: 1.2em;
@@ -115,9 +113,9 @@ header {
 }
 
 /******NEWS******/
-.newsheader{
-    font-size:1.2em;
-    color:#00aeef;
+.newsheader {
+    font-size: 1.2em;
+    color: #00aeef;
 }
 
 /******CONTACTS******/
