@@ -17,7 +17,7 @@ function showMain() {
 }
 
 function showTimetable() {
-    window.open("https://stundenplan.hamburg.de/WebUntis/index.do#main", "_blank");
+    window.open("https://stundenplan.hamburg.de/WebUntis/?school=hh5846", "_blank");
 }
 
 function showCanteen() {
