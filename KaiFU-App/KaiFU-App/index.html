@@ -33,7 +33,7 @@
             </header>
 
             <div id="main_nav">
-                <div class="main_square" onclick="showTimetable()"><img src="images/calendar.svg" /><p>Vertretung</p></div>
+                <div class="main_square" onclick="showSelectClass()"><img src="images/calendar.svg" /><p>Vertretung</p></div>
                 <div class="main_square" onclick="showCanteen()"><img src="images/canteen.svg" /><p>Kantine</p></div>
                 <div class="main_square" onclick="showNews()"><img src="images/news.svg" /><p>News</p></div>
                 <div class="main_square" onclick="showContacts()"><img src="images/contact.svg" /><p>Kontakte</p></div>
@@ -46,6 +46,18 @@
         <div>
             <h1>Timetable</h1>
         </div>
+    </div>
+
+    <div class="page simple" id="selectClass">
+        <h1>Wähle deine Klasse:</h1>
+        <div id="classSelectionList"></div>
+    </div>
+
+    <div class="page simple" id="selectTodayTomorrow">
+        <h1>Für welchen Tag?</h1>
+        <h3 onclick='setAddToDate(0)'>Heute</h3>
+        <h3 onclick ='setAddToDate(1)'>Morgen</h3>
+        <h3 onclick ='setAddToDate(2)'>Übermorgen</h3>
     </div>
 
     <div class="page simple" id="canteen">
@@ -72,11 +84,9 @@
             </p>
 
             <p>
-                <b>Schulbüro</b>, Frau Hermenau <br />
+                <b>Schulbüro KaiFU</b>, Frau Fannipour <br />
                 <a href="tel:040428012333">040 42801-2333</a> <br />
                 <a href="mailto:sekretariat@gymnasium-kaifu.de">sekretariat@gymnasium-kaifu.de</a> <br />
-                Schulbüro, Frau Fannipour / Herr Riebe <br />
-                <a href="tel:040428012513">040 42801-2513</a> <br />
             </p>
 
             <p>
@@ -85,6 +95,15 @@
                 <a href="mailto:oshbuero@hlg-hamburg.de">oshbuero@hlg-hamburg.de</a> <br />
             </p>
 
+            <div class="con_row">
+                <img class="img-circle"
+                     src="images/people/2015-SL-Wolter-140.jpg" />
+                <p>
+                    Herr Wolter, Schulleiter<br />
+                    <a href="tel:040428012333">040 42801-2333</a> <br />
+                    <a href="mailto:arne.wolter@bsb.hamburg.de">arne.wolter@bsb.hamburg.de</a><br />
+                </p>
+            </div>
             <div class="con_row">
                 <img class="img-circle"
                      src="images/people/2013-SL-Kulze-Meyer-140.jpg" />
@@ -96,11 +115,11 @@
             </div>
             <div class="con_row">
                 <img class="img-circle"
-                     src="images/people/2014-SL-Most-140.jpg" />
+                     src="images/people/2013-SL-Papies-140.jpg" />
                 <p>
-                    Herr Most, Leitung Beobachtungsstufe<br />
-                    <a href="tel:040428012337">040 42801-2337</a> <br />
-                    <a href="mailto:beobachtungsstufe@gymnasium-kaifu.de">beobachtungsstufe@gymnasium-kaifu.de</a><br />
+                    Frau Papies, Leitung Oberstufe<br />
+                    <a href="tel:040428012314">040 42801-2314</a><br />
+                    <a href="mailto:oberstufe@gymnasium-kaifu.de">oberstufe@gymnasium-kaifu.de</a><br />
                 </p>
             </div>
             <div class="con_row">
@@ -114,11 +133,11 @@
             </div>
             <div class="con_row">
                 <img class="img-circle"
-                     src="images/people/2013-SL-Papies-140.jpg" />
+                     src="images/people/2014-SL-Most-140.jpg" />
                 <p>
-                    Frau Papies, Leitung Oberstufe<br />
-                    <a href="tel:040428012314">040 42801-2314</a><br />
-                    <a href="mailto:oberstufe@gymnasium-kaifu.de">oberstufe@gymnasium-kaifu.de</a><br />
+                    Herr Most, Leitung Beobachtungsstufe<br />
+                    <a href="tel:040428012337">040 42801-2337</a> <br />
+                    <a href="mailto:beobachtungsstufe@gymnasium-kaifu.de">beobachtungsstufe@gymnasium-kaifu.de</a><br />
                 </p>
             </div>
             <div class="con_row"> 

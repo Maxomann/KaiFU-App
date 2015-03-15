@@ -112,6 +112,15 @@ header {
     height: 50px;
 }
 
+/******SELECT CLASS******/
+#classSelectionList h3{
+    color:#00aeef;
+}
+
+#selectTodayTomorrow h3{
+    color:#00aeef;
+}
+
 /******NEWS******/
 .newsheader {
     font-size: 1.2em;

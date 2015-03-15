@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.KaiFUApp" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets">
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.KaiFUApp" version="0.1.0.0" xmlns="http://www.w3.org/ns/widgets">
   <name>KaiFU-App</name>
-  <description>Die Kaifu-App ist hier! Unter anderem kannst du deinen Stundenplan checken und essen bestellen.</description>
+  <description>Die Kaifu-App ist hier! Hier kannst du deinen Stundenplan checken, Essen bestellen und vieles mehr.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Kay Gonschior</author>
   <content src="index.html" />
-  <access origin="tel:*" />
-  <access origin="geo:*" />
-  <access origin="mailto:*" />
-  <access origin="sms:*" />
-  <access origin="market:*" />
+  <access origin="tel:*" launch-external="yes" />
+  <access origin="geo:*" launch-external="yes" />
+  <access origin="mailto:*" launch-external="yes" />
+  <access origin="sms:*" launch-external="yes" />
+  <access origin="market:*" launch-external="yes" />
   <access origin="*" />
   <access origin="http://*" />
   <access origin="https://*" />
